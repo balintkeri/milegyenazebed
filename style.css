@@ -11,7 +11,10 @@ body {
 h1 {
     color: #2d572c;
     text-shadow: 1px 2px 8px #d0f5c7;
-    background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+    background: linear-gradient(90deg, #88fc53 0%, #a8e063 100%);
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 16px rgba(44, 83, 46, 0.12);
     margin-bottom: 30px;
     text-align: center;
 }
