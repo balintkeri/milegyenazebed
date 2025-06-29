@@ -12,36 +12,6 @@
     <br><br>
     <input type="text" id="newDishInput" placeholder="Add new dish">
     <button id="addBtn">Add Dish</button>
-
-    <script>
-        // Initial dishes JSON
-        let dishes = [
-            "Spaghetti Bolognese",
-            "Chicken Curry",
-            "Vegetable Stir Fry",
-            "Beef Stew",
-            "Fish Tacos"
-        ];
-
-        // Display random dish
-        document.getElementById('randomBtn').onclick = function() {
-            if (dishes.length === 0) {
-                document.getElementById('dishDisplay').textContent = "No dishes available.";
-                return;
-            }
-            const randomIndex = Math.floor(Math.random() * dishes.length);
-            document.getElementById('dishDisplay').textContent = dishes[randomIndex];
-        };
-
-        // Add new dish
-        document.getElementById('addBtn').onclick = function() {
-            const newDish = document.getElementById('newDishInput').value.trim();
-            if (newDish) {
-                dishes.push(newDish);
-                document.getElementById('newDishInput').value = '';
-                alert('Dish added!');
-            }
-        };
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
