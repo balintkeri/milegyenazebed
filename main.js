@@ -1,4 +1,3 @@
-
 // Load dishes from dishes.json
 let dishes = [];
 let dishNames = [];
@@ -12,7 +11,6 @@ fetch('dishes.json')
         dishes = [];
     });
 
-    
 console.log('Loaded dishes:', dishes);
 document.getElementById('randomBtn').onclick = function() {
     if (dishes.length === 0) {
@@ -20,15 +18,17 @@ document.getElementById('randomBtn').onclick = function() {
         return;
     }
     const randomIndex = Math.floor(Math.random() * dishes.length);
-    document.getElementById('dishDisplay').textContent = dishes[randomIndex];
+    // Show the name property if it's an object, otherwise show the string
+    const dish = dishes[randomIndex];
+    document.getElementById('dishDisplay').textContent = dish.name ? dish.name : dish;
 };
 
 // Add new dish
 document.getElementById('addBtn').onclick = function() {
     const newDish = document.getElementById('newDishInput').value.trim();
     if (newDish) {
-        dishes.push(newDish);
-        document.getElementById('newDishInput').value = '';
-        alert('Dish added!');
-    }
-};
+        document.getElementById('dishDisplay').textContent = "No dishes available.";
+        return;t.getElementById('newDishInput').value = '';
+    }   alert('Dish added!');
+    const randomIndex = Math.floor(Math.random() * dishes.length);
+    document.getElementById('dishDisplay').textContent = dishes[randomIndex];};// Add new dishdocument.getElementById('addBtn').onclick = function() {    const newDish = document.getElementById('newDishInput').value.trim();    if (newDish) {        dishes.push(newDish);        document.getElementById('newDishInput').value = '';        alert('Dish added!');    }};
