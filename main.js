@@ -1,12 +1,16 @@
 
+// Load dishes from dishes.json
+let dishes = [];
 
-let dishes = [
-    "Spaghetti Bolognese",
-    "Chicken Curry",
-    "Vegetable Stir Fry",
-    "Beef Stew",
-    "Fish Tacos"
-];
+fetch('dishes.json')
+    .then(response => response.json())
+    .then(data => {
+        dishes = data;
+    })
+    .catch(error => {
+        console.error('Error loading dishes:', error);
+        dishes = [];
+    });
 // Note: Making a pull request to a GitHub repository from client-side JavaScript is not possible due to authentication and CORS restrictions.
 // Typically, you would need a backend server to handle GitHub API authentication and create the pull request.
 // The add button below only updates the local array, not the dishes.json file in your repository.
