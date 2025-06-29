@@ -5,13 +5,13 @@ fetch('dishes.json')
     .then(response => response.json())
     .then(data => {
         dishes = data;
+        console.log('Loaded dishes:', dishes);
     })
     .catch(error => {
         console.error('Error loading dishes:', error);
         dishes = [];
     });
 
-console.log('Loaded dishes:', dishes);
 document.getElementById('randomBtn').onclick = function() {
     if (dishes.length === 0) {
         document.getElementById('dishDisplay').textContent = "No dishes available.";
