@@ -32,3 +32,19 @@ document.getElementById('addBtn').onclick = function() {
     }   alert('Dish added!');
     const randomIndex = Math.floor(Math.random() * dishes.length);
     document.getElementById('dishDisplay').textContent = dishes[randomIndex];};// Add new dishdocument.getElementById('addBtn').onclick = function() {    const newDish = document.getElementById('newDishInput').value.trim();    if (newDish) {        dishes.push(newDish);        document.getElementById('newDishInput').value = '';        alert('Dish added!');    }};
+
+// Random healthy food background images (royalty-free, unsplash)
+const bgImages = [
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80", // salad
+    "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=1200&q=80", // veggies
+    "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=1200&q=80", // fruit bowl
+    "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=1200&q=80", // avocado toast
+    "https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=1200&q=80"  // smoothie
+];
+const randomBg = bgImages[Math.floor(Math.random() * bgImages.length)];
+document.addEventListener('DOMContentLoaded', () => {
+    const bgDiv = document.getElementById('bgImage');
+    if (bgDiv) {
+        bgDiv.style.backgroundImage = `url('${randomBg}')`;
+    }
+});

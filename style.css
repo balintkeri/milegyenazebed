@@ -64,6 +64,16 @@ button:hover {
     transform: translateY(-2px) scale(1.04);
 }
 
+#bgImage {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    transition: background-image 0.5s;
+}
+
 @media (max-width: 600px) {
     #dishDisplay {
         min-width: 180px;
