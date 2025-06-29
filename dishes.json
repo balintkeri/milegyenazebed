@@ -1,6 +1,10 @@
 [
-    { "name": "Spaghetti Bolognese" },
-    { "name": "Chicken Tikka Masala" },
-    { "name": "Sushi" },
-    { "name": "Tacos" }
+    { "name": "Rizottó" },
+    { "name": "Lasagne" },
+    { "name": "Curry" },
+    { "name": "Tojásos nokedli" },
+    { "name": "Sült kelbimbó"},
+    { "name": "Zöldborsó főzelék"},
+    { "name": "Chilis bab"},
+    { "name": "Baconbe tekert sprága"}
 ]
