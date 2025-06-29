@@ -23,15 +23,7 @@ document.getElementById('randomBtn').onclick = function() {
     document.getElementById('dishDisplay').textContent = dish.name ? dish.name : dish;
 };
 
-// Add new dish
-document.getElementById('addBtn').onclick = function() {
-    const newDish = document.getElementById('newDishInput').value.trim();
-    if (newDish) {
-        document.getElementById('dishDisplay').textContent = "No dishes available.";
-        return;t.getElementById('newDishInput').value = '';
-    }   alert('Dish added!');
-    const randomIndex = Math.floor(Math.random() * dishes.length);
-    document.getElementById('dishDisplay').textContent = dishes[randomIndex];};// Add new dishdocument.getElementById('addBtn').onclick = function() {    const newDish = document.getElementById('newDishInput').value.trim();    if (newDish) {        dishes.push(newDish);        document.getElementById('newDishInput').value = '';        alert('Dish added!');    }};
+// Remove the old addBtn onclick handler, as adding is now via GitHub
 
 // Random healthy food background images (royalty-free, unsplash)
 const bgImages = [
