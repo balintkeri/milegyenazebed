@@ -5,6 +5,8 @@
     { "name": "Tojásos nokedli" },
     { "name": "Sült kelbimbó"},
     { "name": "Zöldborsó főzelék"},
+    { "name": "Krumpli főzelék"},
+    { "name": "Bab főzelék"},
     { "name": "Chilis bab"},
     { "name": "Baconbe tekert spárga"},
     { "name": "Tészta saláta"},
@@ -15,5 +17,5 @@
     { "name": "Sütötök krémleves"},
     { "name": "Kenyérlángos"},
     { "name": "Borsópörkölt"},
-    { "name": "Cukkini+paradicsom+sajt"}
+    { "name": "Sütve Cukkini+paradicsom+sajt"},
 ]
