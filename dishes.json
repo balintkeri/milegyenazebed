@@ -1,21 +1,33 @@
 [
     { "name": "Rizottó" },
     { "name": "Lasagne" },
-    { "name": "Curry" },
     { "name": "Tojásos nokedli" },
     { "name": "Sült kelbimbó"},
-    { "name": "Zöldborsó főzelék"},
-    { "name": "Krumpli főzelék"},
-    { "name": "Bab főzelék"},
-    { "name": "Chilis bab"},
     { "name": "Baconbe tekert spárga"},
     { "name": "Tészta saláta"},
     { "name": "Túrógombóc"},
-    { "name": "Krumplis tészta"},
-    { "name": "Kinoa saláta + halumi"},
-    { "name": "Pesto"},
     { "name": "Sütötök krémleves"},
     { "name": "Kenyérlángos"},
+    { "name": "Sült sajtos paradicsom cukkini"},
+
+    
+    { "name": "Curry" },
+    { "name": "Chilis bab"},
+
+    { "name": "Pesto"},
+    { "name": "Krumplis tészta"},
     { "name": "Borsópörkölt"},
-    { "name": "Sütve Cukkini+paradicsom+sajt"}
+    { "name": "Brokkolis tészta"},
+    { "name": "Sajtos-tejfölös tészta"},
+
+    { "name": "Lencse főzelék"},
+    { "name": "Sárgaborsó főzelék"},
+    { "name": "Zöldborsó főzelék"},
+    { "name": "Krumpli főzelék"},
+    { "name": "Bab főzelék"},
+
+    { "name": "Kinoa saláta + halumi"},
+    { "name": "Sült cékla, édesburgony és gersli saláta + halumi"},
+    { "name": "Sült karfiol és brokkoli saláta + halumi"},
+    
 ]
